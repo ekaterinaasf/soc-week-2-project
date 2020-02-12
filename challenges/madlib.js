@@ -3,10 +3,10 @@ console.log('madlib script has loaded');
 // write this function!
 function madlib(Noun, Verb, Adj) {
   if (Noun.length > Verb.length) {
-    stroka = "the "+Adj+" "+Noun+" loves to "+Verb+" in the summer";
+    const stroka = "the "+Adj+" "+Noun+" loves to "+Verb+" in the summer";
     return stroka;
   } else {
-    stroke = "when the "+Adj+" rain falls, "+Noun+" begins to "+Verb;
+    const stroka = "when the "+Adj+" rain falls, "+Noun+" begins to "+Verb;
     return stroka;
   }
 
