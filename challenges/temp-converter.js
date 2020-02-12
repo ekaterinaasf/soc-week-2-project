@@ -47,9 +47,11 @@ function tempConverterHandler() {
 
   // perform core logic
   // write this line!
+  const result = tempConverter(userTemp, userDegrees);
 
   // alert result for the user
   // write this line!
+  alert(result);
 
   // log action for the developer
   console.log('\n--- tempConverter ---');
