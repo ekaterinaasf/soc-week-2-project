@@ -1,7 +1,14 @@
 console.log('madlib script has loaded');
 
 // write this function!
-function madlib() {
+function madlib(Noun, Verb, Adj) {
+  if (Noun.length>Verb.length) {
+    stroka = "the "+Adj+" "+Noun+" loves to "+Verb+" in the summer";
+    return stroka;
+  } else {
+    stroke = "when the "+Adj+" rain falls, "+Noun+" begins to "+Verb;
+    return stroka;
+  }
 
 }
 
@@ -31,7 +38,9 @@ function madlibHandler() {
   // log action for the developer
   console.log('\n--- madlib ---');
   console.log('userNoun:', '(' + typeof userNoun + '),', userNoun);
+  console.log('userNoun length:', userNoun.length);
   console.log('userVerb:', '(' + typeof userVerb + '),', userVerb);
+  console.log('userVerb length:', userVerb.length);
   console.log('userAdj:', '(' + typeof userAdj + '),', userAdj);
   console.log('result:', '(' + typeof result + '),', result);
 }
