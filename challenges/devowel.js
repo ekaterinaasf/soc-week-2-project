@@ -1,7 +1,11 @@
 console.log('devowel script has loaded');
 
 // write this function!
-function devowel() {
+function devowel(str) {
+  var1 = str.toLowerCase();
+  //rez = var1.split('').replace('a','').replace('e','').replace('i','').replace('o','').replace('u','').replace('y','').join('');
+  rez=var1.replace(/[aeiouy]/gi, '');
+  return rez;
 }
 
 // remove all vowels, lower and upper case!
